@@ -101,4 +101,4 @@
 
 
 # API
-<img src="/img/API명세.png" width="60%" title="API명세"></img>
+<img src="/img/API명세.png" width="60%" title="API명세"></img>
