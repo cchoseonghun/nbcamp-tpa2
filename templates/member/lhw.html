@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+​
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+​
+    <title>TPA2</title>
+​<link rel="stylesheet" href="../../static/css/member/lhw.css"/>
+    <script src="../../static/js/member/lhw.js" defer></script>
+</head>
+<body>
+    <div class="mypic">
+        <h1>안녕하세요 이효원 웹페이지입니다.</h1>
+        <p>현재 기온: <span id="temp">36</span>도</p>
+    </div>
+
+    <div class="myprofile">
+        <div class="mypic2">
+            <div style="overflow: auto">
+                <img style="float:left; padding: 10px" width="200px" height="200px"
+                 src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F4jm3H%2FbtrRaEzD4X0%2F9HK11vx8xggy8xuJcn4TK1%2Fimg.jpg">
+                <p>이효원 / 19940424 / ESFJ</p>
+                <div class="post">
+                    <p>안녕하세요. 내일배움캠프 4기 노드 a반 2조 이효원입니다.</br>
+                        제가 생각하는 제 장점은 책임감과 의지력이 강하다는 것입니다.</br>
+                        그렇기 때문에 어떠한 고난에도 굴복하지 않고 헤쳐나가려 하는 태도를 유지합니다.</br>
+                        또한 의견 조율자의 역할도 감당할 수 있습니다.
+                    </p>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                    블로그 주소
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">https://lhw1245.tistory.com/</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="alert alert-light" role="alert">
+                                방명록은 아래칸에 작성해주세요
+                            </div>
+                            <div class="mypost">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="url">
+                                    <label for="name">작성자</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="comment" style="height: 100px"></textarea>
+                                    <label for="comment">내용</label>
+                                </div>
+                                <button onclick="save_comment()" type="button" class="btn btn-dark">작성!</button>
+                            </div>
+                            <div class="mycards" id="comment-list">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>새로운 앨범 너무 멋져요!</p>
+                                            <footer class="blockquote-footer">호빵맨</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</body>
+</html>
